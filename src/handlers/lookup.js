@@ -1,6 +1,6 @@
 import qs from 'qs';
 
-import { parseGhIssueString } from '../utils/github';
+import { fetchGitHubIssue, parseGhIssueString } from '../utils/github';
 import { constructGhIssueSlackMessage } from '../utils/slack';
 
 export default async request => {  
