@@ -29,3 +29,5 @@ Request URL should be = The router url generated(discussed after a few paras) + 
 - Run `npm install`.
 - Run `wrangler secret put SLACK_WEBHOOK_URL` & paste the webhook url generated in slack.
 - Run `wrangler publish index.js`
+  
+  Voila! Now you can get all the alerts regarding any issues.
