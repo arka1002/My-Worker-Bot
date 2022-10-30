@@ -17,4 +17,15 @@ The steps to self host are listed below:
 - On the Slack sidebar, select **Slash Commands**.
 - Create your first slash command.
 ![image](https://user-images.githubusercontent.com/105232141/198863836-cf6b966f-00c3-4603-8bc9-b4159fcc5991.png)  
-Request URL should be = The router url generated(discussed after a few paras) + /lookup
+Request URL should be = The router url generated(discussed after a few paras) + /lookup  
+### Configuring Github webhook
+- Go to your Github repository’s Settings > Webhooks > Add webhook.
+- Set the Payload URL to the router url generated(discussed after a few paras) + `/webhook` path on your Worker URL.
+- In the Content type dropdown, select application/json.
+- In Which events would you like to trigger this webhook?, select Let me select individual events. Select `Issues`.
+- Select **Add webhook**.
+### Building
+- Fork this repo & clone it.
+- Run `npm install`.
+- Run `wrangler secret put SLACK_WEBHOOK_URL` & paste the webhook url generated in slack.
+- Run `wrangler publish index.js`
