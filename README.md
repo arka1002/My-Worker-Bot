@@ -10,3 +10,7 @@ The steps to self host are listed below:
 - Authenticate Wrangler by `wrangler login`
 ### Configuring Slack
 - Kindly go to this [link](https://api.slack.com/apps) and select **Create New App**.
+- On the sidebar of Slack’s UI, select **Incoming Webhooks**.
+- In **Webhook URLs for your Workspace**, select **Add New Webhook to Workspace**.
+- On the following screen, select the channel that you want your webhook to send messages to (you can select a room, like #general or #code, or be messaged directly by your Slack bot when the webhook is called.)
+- Authorize the new webhook URL.
