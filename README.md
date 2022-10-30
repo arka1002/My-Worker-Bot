@@ -16,4 +16,5 @@ The steps to self host are listed below:
 - Authorize the new webhook URL.
 - On the Slack sidebar, select **Slash Commands**.
 - Create your first slash command.
-
+![image](https://user-images.githubusercontent.com/105232141/198863836-cf6b966f-00c3-4603-8bc9-b4159fcc5991.png)  
+Request URL should be = The router url generated(discussed after a few paras) + /lookup
