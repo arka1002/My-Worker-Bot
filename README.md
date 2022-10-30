@@ -14,3 +14,6 @@ The steps to self host are listed below:
 - In **Webhook URLs for your Workspace**, select **Add New Webhook to Workspace**.
 - On the following screen, select the channel that you want your webhook to send messages to (you can select a room, like #general or #code, or be messaged directly by your Slack bot when the webhook is called.)
 - Authorize the new webhook URL.
+- On the Slack sidebar, select **Slash Commands**.
+- Create your first slash command.
+
